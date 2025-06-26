@@ -102,6 +102,7 @@ export default function ComingSoon() {
       <AnimatePresence>
         {showNotifyForm && (
           <motion.div
+            key={showNotifyForm ? "modal-open" : "modal-closed"}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
