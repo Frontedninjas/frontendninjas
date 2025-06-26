@@ -79,16 +79,16 @@ export default function ComingSoon() {
       <footer className="relative z-10 pb-8">
         <div className="container mx-auto px-4 flex justify-center">
           <div className="flex items-center gap-4">
-            <a href="https://github.com" target="_blank" className="social-icon">
+            <a href="https://github.com/Frontedninjas" target="_blank" className="social-icon">
               <Github className="w-5 h-5 text-gray-700" />
             </a>
-            <a href="https://linkedin.com" target="_blank" className="social-icon">
+            <a href="https://www.linkedin.com/company/frontedninjas/" target="_blank" className="social-icon">
               <Linkedin className="w-5 h-5 text-blue-600" />
             </a>
-            <a href="https://instagram.com" target="_blank" className="social-icon">
+            <a href="https://www.instagram.com/frontedninjas/" target="_blank" className="social-icon">
               <Instagram className="w-5 h-5 text-pink-600" />
             </a>
-            <a href="https://twitter.com" target="_blank" className="social-icon">
+            <a href="https://x.com/frontedninjas" target="_blank" className="social-icon">
               <Twitter className="w-5 h-5 text-blue-400" />
             </a>
           </div>
