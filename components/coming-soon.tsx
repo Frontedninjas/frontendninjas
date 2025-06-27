@@ -37,7 +37,7 @@ export default function ComingSoon() {
           <div className="flex items-center gap-2 bg-zinc-900 text-white px-4 py-2 rounded-full shadow-md">
             <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 width={500}
                 height={500}
                 alt="logo"
