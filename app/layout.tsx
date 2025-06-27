@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Frontend Ninjas",
     images: [
       {
-        url: "https://frontendninjas.dev/og-image.png",
+        url: "https://frontedninjas.netlify.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Frontend Ninjas Coming Soon",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Frontend Ninjas — Coming Soon",
     description:
       "Level up your frontend skills with the upcoming launch of Frontend Ninjas — a community for developers, by developers.",
-    images: ["https://frontendninjas.dev/og-image.png"],
+    images: ["https://frontedninjas.netlify.app/og-image.png"],
     creator: "@frontendninjas",
   },
   category: "technology",
