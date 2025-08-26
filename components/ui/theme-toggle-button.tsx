@@ -34,8 +34,6 @@ export default function ThemeToggleButton({
 
     let styleElement = document.getElementById(styleId) as HTMLStyleElement
 
-    console.log("style ELement", styleElement)
-    console.log("name", name)
 
     if (!styleElement) {
       styleElement = document.createElement("style")
