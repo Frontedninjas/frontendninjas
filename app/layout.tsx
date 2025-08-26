@@ -3,6 +3,9 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
+import { ThemeProvider } from "@/components/ui/theme-provider"
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
+
 
 export const metadata: Metadata = {
   title: "Frontend Ninjas — Coming Soon",
@@ -67,7 +70,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      
+<ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+          >
+            {children}
+          </ThemeProvider>   
+                <SmoothCursor />
+          
+             </body>
     </html>
   )
 }
