@@ -54,7 +54,7 @@ export default function Header() {
 					/>
 					<span className="font-bold text-lg truncate">FrontendNinjas</span>
 					<Badge variant="secondary" className="ml-2 text-xs shrink-0">
-						Soon
+						Alpha
 					</Badge>
 				</Link>
 			</div>

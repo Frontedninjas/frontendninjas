@@ -16,24 +16,6 @@ const communityMembers = [
 		linkedin: "https://www.linkedin.com/in/sumangal-karan/",
 		instagram: "https://www.instagram.com/sumangal_karan/",
 	},
-	{
-		name: "Alex Ninja",
-		role: "Contributor",
-		image: "/team/alex.png",
-		bio: "Loves building UI components and sharing knowledge.",
-		github: "#",
-		linkedin: "#",
-		instagram: "#",
-	},
-	{
-		name: "Jamie Script",
-		role: "Community Helper",
-		image: "/team/jamie.png",
-		bio: "Always ready to help and connect people.",
-		github: "#",
-		linkedin: "#",
-		instagram: "#",
-	},
 ];
 
 export default function CommunityPage() {
