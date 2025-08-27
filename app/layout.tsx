@@ -3,9 +3,16 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
+import { ThemeProvider } from "@/components/ui/theme-provider"
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import type { Viewport } from 'next'
+ 
+export const viewport: Viewport = {
+  themeColor: '#09090b',
+}
 
 export const metadata: Metadata = {
-  title: "Frontend Ninjas — Coming Soon",
+  title: "FrontendNinjas",
   description:
     "Join Frontend Ninjas — a new hub for frontend developers to level up their React, Next.js, and TypeScript skills with real-world projects.",
   keywords: [
@@ -20,22 +27,22 @@ export const metadata: Metadata = {
     "open source",
     "frontend ninjas",
   ],
-  authors: [{ name: "Frontend Ninjas", url: "https://frontedninjas.netlify.app/" }],
-  creator: "Frontend Ninjas",
-  publisher: "Frontend Ninjas",
+  authors: [{ name: "Sumangal karan", url: "https://frontedninjas.netlify.app/" }],
+  creator: "FrontendNinjas",
+  publisher: "FrontendNinjas",
   metadataBase: new URL("https://frontedninjas.netlify.app/"),
   openGraph: {
-    title: "Frontend Ninjas — Coming Soon",
+    title: "FrontendNinjas",
     description:
       "Frontend Ninjas is launching soon. Learn frontend development the smart way — with real projects, open source, and a vibrant community.",
     url: "https://frontedninjas.netlify.app/",
-    siteName: "Frontend Ninjas",
+    siteName: "FrontendNinjas",
     images: [
       {
         url: "https://frontedninjas.netlify.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Frontend Ninjas Coming Soon",
+        alt: "FrontendNinjas",
       },
     ],
     type: "website",
@@ -50,7 +57,7 @@ export const metadata: Metadata = {
     creator: "@frontendninjas",
   },
   category: "technology",
-  themeColor: "#0f172a", // tailwind slate-900 (dark background)
+  themeColor: "#09090b", // tailwind slate-900 (dark background)
   robots: {
     index: true,
     follow: true,
@@ -67,7 +74,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      
+<ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+          >
+            {children}
+          </ThemeProvider>   
+                <SmoothCursor />
+          
+             </body>
     </html>
   )
 }
