@@ -17,6 +17,13 @@ const projects = [
 		github: "https://github.com/Frontedninjas/trivio",
 		tags: ["javascript", "Cli", "app"],
 	},
+    {
+        name: "SapphireUI",
+		description: "SapphireUI – A Reflex-based UI component library.",
+		github: "https://github.com/sapphireUI/SapphireUI",
+		tags: ["Python", "bash", "UI","Reflex"],
+
+    }
 ];
 
 export default function OpensourcePage() {
