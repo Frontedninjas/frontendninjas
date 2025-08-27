@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="w-full px-4 py-6 bg-background ">
       <div className="max-w-5xl mx-auto flex flex-col items-center justify-center gap-4 text-center">
-        <div className="text-sm text-zinc-500">
+        <div className="text-sm text-zinc-800 dark:text-white">
           &copy; {new Date().getFullYear()} FrontendNinjas. All rights reserved.
         </div>
         <div className="flex items-center gap-4 justify-center">
