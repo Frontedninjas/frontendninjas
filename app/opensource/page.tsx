@@ -6,22 +6,16 @@ import { Github } from "lucide-react";
 
 const projects = [
 	{
-		name: "NinjaUI",
-		description: "A modern React component library for rapid frontend development.",
-		github: "https://github.com/Frontedninjas/ninjaui",
-		tags: ["React", "UI", "Library"],
+		name: "SkeleCLI",
+		description: "🚀❤️✅A simple CLI to generate a blueprint for a new project✅👨‍🏭🚀",
+		github: "https://github.com/Frontedninjas/SkeleCLI",
+		tags: ["React", "CLI", "Library"],
 	},
 	{
-		name: "NinjaDocs",
-		description: "Open source documentation template built with Next.js.",
-		github: "https://github.com/Frontedninjas/ninjadocs",
-		tags: ["Next.js", "Docs", "Template"],
-	},
-	{
-		name: "NinjaCLI",
-		description: "A CLI tool for scaffolding frontend projects with best practices.",
-		github: "https://github.com/Frontedninjas/ninjacli",
-		tags: ["CLI", "Tooling", "Frontend"],
+		name: "trivio",
+		description: "🎉 Trivio – The Ultimate CLI Quiz Game!",
+		github: "https://github.com/Frontedninjas/trivio",
+		tags: ["javascript", "Cli", "app"],
 	},
 ];
 

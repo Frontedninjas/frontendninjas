@@ -40,14 +40,14 @@ export default function CommunityPage() {
 	return (
 		<>
 			<Header />
-			<main className="flex flex-col items-center justify-center min-h-[88vh] px-4 py-6 sm:py-12 bg-background">
+			<main className="flex flex-col items-center justify-center min-h-[88vh] px-2 sm:px-4 py-6 sm:py-12 bg-background">
 				<ComicText
 					fontSize={2}
-					className="text-xs sm:text-xs md:text-5xl mt-6 mb-6 text-center"
+					className="text-lg sm:text-2xl md:text-5xl mt-6 mb-6 text-center"
 				>
 					Join Our Community!
 				</ComicText>
-				<Card className="w-full max-w-xl mx-auto p-4 sm:p-6 flex flex-col items-center gap-4 shadow-lg">
+				<Card className="w-full max-w-xl mx-auto p-3 sm:p-6 flex flex-col items-center gap-4 shadow-lg">
 					<Badge variant="secondary" className="mb-2 text-base px-3 py-1">
 						Open & Inclusive
 					</Badge>
@@ -70,11 +70,11 @@ export default function CommunityPage() {
 						Join Our Discord
 					</a>
 				</Card>
-				<div className="w-full max-w-4xl mx-auto mt-10 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+				<div className="w-full max-w-4xl mx-auto mt-10 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 					{communityMembers.map((member) => (
 						<Card
 							key={member.name}
-							className="flex flex-col items-center p-6 gap-3"
+							className="flex flex-col items-center p-4 sm:p-6 gap-3"
 						>
 							<Image
 								src={member.image}
@@ -83,14 +83,16 @@ export default function CommunityPage() {
 								height={80}
 								className="rounded-full object-cover mb-2"
 							/>
-							<span className="font-semibold text-lg">{member.name}</span>
+							<span className="font-semibold text-base sm:text-lg text-center">
+								{member.name}
+							</span>
 							<Badge
 								variant="secondary"
 								className="text-xs px-2 py-1 mb-1"
 							>
 								{member.role}
 							</Badge>
-							<p className="text-zinc-600 dark:text-zinc-300 text-center text-sm">
+							<p className="text-zinc-600 dark:text-zinc-300 text-center text-xs sm:text-sm">
 								{member.bio}
 							</p>
 							<div className="flex items-center gap-3 mt-2">
