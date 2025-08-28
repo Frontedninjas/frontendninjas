@@ -44,12 +44,12 @@ export default function CommunityPage() {
 						you grow.
 					</p>
 					<a
-						href="https://discord.gg/frontendninjas"
+						href="https://chat.whatsapp.com/KriczFaNCiaDQ14TYzjeKl"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="mt-4 px-4 py-2 sm:px-6 sm:py-3 rounded bg-zinc-900 text-white font-medium hover:bg-zinc-800 transition text-center w-full sm:w-auto"
 					>
-						Join Our Discord
+						Join Our WhatsApp
 					</a>
 				</Card>
 				<div className="w-full max-w-4xl mx-auto mt-10 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
